@@ -1,0 +1,48 @@
+@import url('https://fonts.cdnfonts.com/css/stars-love');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pacifico&display=swap');
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "Outfit", sans-serif;
+}
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+::selection {
+  color: none;
+  background: none;
+}
+.evento-main{
+  font-family: 'Stars & Love', sans-serif;
+}
+
+@theme{
+  --color-primary: #ff3131;
+  --color-primary-dull: #d42828;
+}
+.swiper-slide {
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1);
+}
+.swiper-slide .testimonial-card {
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+}
+.swiper-slide-active .testimonial-card {
+  transform: scale(1.08);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  z-index: 10;
+}
+.dropdown-content {
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.hover\:bg-gray-100:hover {
+  background-color: #f7fafc;
+}
+
